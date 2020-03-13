@@ -1,16 +1,16 @@
-const { exec } = require("child_process");
+const { exec } = require('child_process');
 
-const mainUrl = "https://sports.gstp.uat.skybet.net";
+const mainUrl = 'https://sports.gstp.uat.skybet.net';
 
 const pages = [
   mainUrl,
   `${mainUrl}/166661`,
   `${mainUrl}/166661/10220390`,
-  `${mainUrl}/166661/10220390/11623979`
+  `${mainUrl}/166661/10220390/11623979`,
 ];
 
 const urls = pages.reduce((acc, url) => {
-  acc = `${acc},${url}?sideId=develop`;
+  acc = `${acc},${url}?siteId=develop`;
   return acc;
 });
 

@@ -4,7 +4,9 @@
   "description": "",
   "main": "lighthouse.js",
   "scripts": {
-    "batch": "node lighthouse-batch.js"
+    "lh": "node lighthouse-batch.js",
+    "lh:batch": "node lighthouse-batch.js",
+    "sitespeed": "node sitespeed.js"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +14,12 @@
   "dependencies": {
     "chrome-launcher": "^0.13.0",
     "lighthouse": "^5.6.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "sitespeed.io": "^12.2.0"
   },
   "devDependencies": {
-    "lighthouse-batch": "^5.0.2"
+    "cypress": "^4.1.0",
+    "lighthouse-batch": "^5.0.2",
+    "webcoach": "^4.5.0"
   }
 }
